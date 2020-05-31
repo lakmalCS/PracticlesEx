@@ -12,8 +12,6 @@ public class Main {
 	}
 	
 	public static void inventoryTest_01() {
-		//TODO modify the statements in this method to use generics.
-		//Don't change the keys/values and their types passed to entries.
 		Inventory<String,String> inventory = new Inventory<>();
 		Entry<String,String> entry1 = new Entry<>("Entry1", "100");
 		Entry<String,String> entry2 = new Entry<>("Entry2", "101");
@@ -31,16 +29,12 @@ public class Main {
 		
 		for(Entry<String,String> entry: items) {
 			String key = entry.getKey();
-			//TODO Need to remove String casting by using generics.
-			//After you introduce generics to Entry class you should be able to write this line as: String value = entry.getValue();
 			String value = (String) entry.getValue();
 			System.out.println(key+" : "+value);
 		}
 	}
 	
 	public static void invnetoryTest_02() {
-		//TODO modify the statements in this method to use generics.
-		//Don't change the keys/values and their types passed to entries.
 		Inventory<Integer,String> inventory = new Inventory<>();
 		Entry<Integer,String> entry1 = new Entry<>(100,"Entry1");
 		Entry<Integer,String> entry2 = new Entry<>(101,"Entry2");
@@ -50,7 +44,6 @@ public class Main {
 		inventory.addToInventory(entry2);
 		inventory.addToInventory(entry3);
 		
-		//TODO Need to remove String casting.
 		String value1 = inventory.getEntryByKey(101).getValue();
 		String value2 = inventory.getEntryByIndex(1).getValue();
 		
@@ -64,8 +57,6 @@ public class Main {
 	}
 	
 	public static void inventoryTest_03() {
-		//TODO modify the statements in this method to use generics.
-		//Don't change the keys/values and their types passed to entries.
 		Inventory<String,Double> inventory = new Inventory<>();
 		Entry<String,Double> entry1 = new Entry<>("Entry1", 10.1);
 		Entry<String,Double> entry2 = new Entry<>("Entry2", 10.2);
