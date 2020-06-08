@@ -55,7 +55,6 @@ public class Student {
 	}
 
 
-	//TODO something is not really correct here!
 	public HashMap<String, Subject> getSubjects() {
 		Gson gson = new Gson();
 		String jsonString = gson.toJson(subjects);

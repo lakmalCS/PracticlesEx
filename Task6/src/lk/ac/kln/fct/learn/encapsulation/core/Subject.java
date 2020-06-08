@@ -29,7 +29,6 @@ public class Subject{
 		this.subjectName = subjectName;
 	}
 
-	//TODO something is not really correct here!
 	public ArrayList<Degree> getAllowedDegrees() {
 		return new ArrayList<Degree>(allowedDegrees);
 	}

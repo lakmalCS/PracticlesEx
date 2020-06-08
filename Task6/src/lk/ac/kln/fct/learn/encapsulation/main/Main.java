@@ -8,7 +8,6 @@ import lk.ac.kln.fct.learn.encapsulation.core.Degree;
 import lk.ac.kln.fct.learn.encapsulation.core.Student;
 import lk.ac.kln.fct.learn.encapsulation.core.Subject;
 
-//You can't change anything in the class.
 public class Main {
 	private final static String COMP102 = "COMP102";
 	private final static String COMP103 = "COMP103";
@@ -18,8 +17,7 @@ public class Main {
 	private static StudentController controller = new StudentController();
 	
 	public static void main(String[] args) {
-		//Define subjects.
-		//JAVA
+	
 		ArrayList<Degree> degreesJava = new ArrayList<>();
 		degreesJava.add(new Degree(CS,1));
 		degreesJava.add(new Degree(ICT,2));
@@ -48,10 +46,6 @@ public class Main {
 		checkOriginalValues();
 	}
 	
-	/**
-	 * This method performs an illegal access to students objects and change different fields.
-	 * Your aim is to prevent this attack. You can't change this method.
-	 */
 	public static void illegalStudentAccess() {
 		HashMap<Integer, Student> students = controller.getStudents();
 		students.get(100).setDegree(ASE);

@@ -17,7 +17,6 @@ public class StudentController implements Cloneable{
 		students.put(studentID, student);
 	}
 	
-	//TODO something is not really correct here!
 	public HashMap<Integer, Student> getStudents(){
 		Gson gson = new Gson();
 		String jsonString = gson.toJson(students);
